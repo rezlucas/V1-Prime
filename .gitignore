@@ -45,3 +45,5 @@ next-env.d.ts
 
 # design reference screenshots (third-party site, not app assets)
 reference-screenshots/
+
+.vercel
