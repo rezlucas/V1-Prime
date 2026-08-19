@@ -39,3 +39,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# claude code local settings (machine-specific, not shared)
+.claude/
+
+# design reference screenshots (third-party site, not app assets)
+reference-screenshots/

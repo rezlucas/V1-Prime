@@ -1,40 +1,75 @@
+/* ---------------------------------------------------------
+   Design tokens
+--------------------------------------------------------- */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Surfaces */
+  --bg-cream: #f7f3ea;
+  --bg-gold: #ecdfc1;
+  --bg-gold-soft: #f3ead4;
+  --bg-white: #ffffff;
+  --bg-dark: #14161a;
+  --line: rgba(20, 22, 26, 0.1);
+  --line-soft: rgba(20, 22, 26, 0.06);
+
+  /* Text */
+  --text: #14161a;
+  --text-soft: #565f6b;
+  --text-faint: #89919c;
+  --text-on-dark: #f7f3ea;
+  --text-on-dark-soft: rgba(247, 243, 234, 0.72);
+
+  /* Accent */
+  --gold: #a59152;
+  --gold-dark: #7d6b3d;
+  --gold-100: rgba(165, 145, 82, 0.1);
+
+  /* Radii */
+  --radius-sm: 8px;
+  --radius: 16px;
+  --radius-lg: 28px;
+  --radius-pill: 999px;
+
+  /* Layout */
+  --max-width: 1280px;
+  --gutter: clamp(1.25rem, 4vw, 3rem);
+  --section-pad: clamp(4rem, 9vw, 7.5rem);
+
+  /* Type */
+  --font-display: var(--font-serif), Georgia, serif;
+  --font-body: var(--font-sans), system-ui, sans-serif;
+
+  /* Motion */
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* ---------------------------------------------------------
+   Reset
+--------------------------------------------------------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 html {
-  height: 100%;
-}
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-* {
-  box-sizing: border-box;
-  padding: 0;
   margin: 0;
+  background: var(--bg-cream);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
 }
 
 a {
@@ -42,8 +77,149 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+button {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+input,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+/* ---------------------------------------------------------
+   Focus visibility
+--------------------------------------------------------- */
+:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* ---------------------------------------------------------
+   Typography helpers
+--------------------------------------------------------- */
+.eyebrow {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--text-faint);
+}
+
+/* ---------------------------------------------------------
+   Layout helpers
+--------------------------------------------------------- */
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+/* ---------------------------------------------------------
+   Motion: shared reveal keyframes
+--------------------------------------------------------- */
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
   }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ---------------------------------------------------------
+   Motion: scroll-triggered section reveal (see hooks/useReveal.ts)
+--------------------------------------------------------- */
+.reveal {
+  opacity: 0;
+  transform: translateY(36px) scale(0.985);
+  filter: blur(6px);
+  transition: opacity 0.9s var(--ease), transform 0.9s var(--ease),
+    filter 0.9s var(--ease);
+  will-change: opacity, transform, filter;
+}
+
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  filter: blur(0);
+}
+
+/* Eyebrow / label reveals slightly ahead of its heading for a layered feel */
+.reveal-lead {
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity 0.6s var(--ease), transform 0.6s var(--ease);
+}
+
+.reveal-visible .reveal-lead,
+.reveal-lead.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ---------------------------------------------------------
+   Motion: staggered children reveal (grids, cards, lists)
+--------------------------------------------------------- */
+.reveal-stagger > * {
+  opacity: 0;
+  transform: translateY(34px) scale(0.96);
+  filter: blur(5px);
+  transition: opacity 0.75s var(--ease), transform 0.75s var(--ease),
+    filter 0.75s var(--ease);
+  will-change: opacity, transform, filter;
+}
+
+.reveal-stagger.reveal-visible > * {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  filter: blur(0);
+}
+
+.reveal-stagger.reveal-visible > *:nth-child(1) { transition-delay: 0.03s; }
+.reveal-stagger.reveal-visible > *:nth-child(2) { transition-delay: 0.12s; }
+.reveal-stagger.reveal-visible > *:nth-child(3) { transition-delay: 0.21s; }
+.reveal-stagger.reveal-visible > *:nth-child(4) { transition-delay: 0.3s; }
+.reveal-stagger.reveal-visible > *:nth-child(5) { transition-delay: 0.39s; }
+.reveal-stagger.reveal-visible > *:nth-child(6) { transition-delay: 0.48s; }
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+/* ---------------------------------------------------------
+   Selection
+--------------------------------------------------------- */
+::selection {
+  background: var(--gold);
+  color: var(--bg-cream);
 }

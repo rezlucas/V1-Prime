@@ -1,0 +1,129 @@
+.footer {
+  padding-top: var(--section-pad);
+  padding-bottom: clamp(2rem, 4vw, 3rem);
+  background: var(--bg-cream);
+  border-top: 1px solid var(--line);
+}
+
+.top {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: clamp(2.5rem, 5vw, 4rem);
+  padding-bottom: clamp(2.5rem, 5vw, 3.5rem);
+}
+
+.brand {
+  max-width: 22rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  color: var(--text);
+}
+
+.logoMark {
+  width: 26px;
+  height: 26px;
+  color: var(--gold);
+  flex-shrink: 0;
+}
+
+.tagline {
+  margin-top: 1rem;
+  color: var(--text-soft);
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
+.seal {
+  margin-top: 0.75rem;
+  color: var(--text-faint);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.socials {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1.75rem;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.35rem;
+  height: 2.35rem;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  color: var(--text-soft);
+  transition: color 0.25s var(--ease), border-color 0.25s var(--ease);
+}
+
+.social:hover {
+  color: var(--gold-dark);
+  border-color: var(--gold);
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.column h3 {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  margin-bottom: 1.15rem;
+}
+
+.column ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.column a {
+  font-size: 0.92rem;
+  color: var(--text-soft);
+  transition: color 0.25s var(--ease);
+}
+
+.column a:hover {
+  color: var(--text);
+}
+
+.bottom {
+  padding-top: clamp(1.5rem, 3vw, 2rem);
+  border-top: 1px solid var(--line);
+}
+
+.bottom p {
+  font-size: 0.82rem;
+  color: var(--text-faint);
+}
+
+@media (min-width: 640px) {
+  .columns {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .top {
+    grid-template-columns: 1.1fr 2fr;
+  }
+}
+
+@media (min-width: 1100px) {
+  .columns {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}

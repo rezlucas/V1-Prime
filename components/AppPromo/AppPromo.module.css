@@ -1,0 +1,187 @@
+.appPromo {
+  background: var(--bg-gold);
+  padding-block: var(--section-pad);
+  overflow: hidden;
+}
+
+.inner {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: clamp(3rem, 6vw, 4rem);
+  align-items: center;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  color: var(--text);
+}
+
+.text {
+  margin-top: 1.5rem;
+  color: var(--text);
+  font-size: 1.05rem;
+  line-height: 1.6;
+  max-width: 26rem;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 2rem;
+  padding: 0.75rem 1.25rem;
+  background: #14161a;
+  color: #fff;
+  border-radius: var(--radius);
+  transition: transform 0.25s var(--ease);
+}
+
+.badge:hover {
+  transform: translateY(-2px);
+}
+
+.badgeIcon {
+  width: 24px;
+  height: 24px;
+  color: #4ade80;
+  flex-shrink: 0;
+}
+
+.badge span {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.badge small {
+  font-size: 0.68rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* ---------------------------------------------------------
+   Phone mockup — WhatsApp-style chat
+--------------------------------------------------------- */
+.mockWrap {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.glow {
+  position: absolute;
+  inset: -15% -5%;
+  background: radial-gradient(closest-side, rgba(255, 255, 255, 0.35), transparent 70%);
+  z-index: 0;
+  filter: blur(10px);
+}
+
+.phone {
+  position: relative;
+  z-index: 1;
+  width: min(300px, 78vw);
+  aspect-ratio: 9 / 18;
+  background: #14161a;
+  border-radius: 2.2rem;
+  padding: 0.5rem;
+  box-shadow: 0 35px 80px -25px rgba(20, 22, 26, 0.4);
+}
+
+.phoneScreen {
+  height: 100%;
+  background: #ece5da;
+  border-radius: 1.75rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.phoneHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 1.5rem 0.9rem 0.75rem;
+  background: var(--gold-dark);
+}
+
+.phoneAvatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.25);
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.phoneName {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.phoneStatus {
+  font-size: 0.6rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.phoneChat {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.9rem;
+}
+
+.bubbleIn,
+.bubbleOut {
+  max-width: 84%;
+  padding: 0.5rem 0.7rem;
+  border-radius: 0.8rem;
+  font-size: 0.68rem;
+  line-height: 1.4;
+}
+
+.bubbleIn {
+  align-self: flex-start;
+  background: #fff;
+  color: var(--text);
+  border-bottom-left-radius: 0.2rem;
+}
+
+.bubbleOut {
+  align-self: flex-end;
+  background: #d9f2c4;
+  color: var(--text);
+  border-bottom-right-radius: 0.2rem;
+}
+
+.phoneInputBar {
+  padding: 0.6rem 0.9rem;
+  background: #f4efe6;
+}
+
+.phoneInputBar span {
+  display: block;
+  background: #fff;
+  border-radius: var(--radius-pill);
+  padding: 0.45rem 0.9rem;
+  font-size: 0.65rem;
+  color: var(--text-faint);
+}
+
+@media (min-width: 860px) {
+  .inner {
+    grid-template-columns: 1.1fr 0.9fr;
+  }
+}

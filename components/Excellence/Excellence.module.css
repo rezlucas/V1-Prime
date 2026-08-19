@@ -1,0 +1,277 @@
+.excellence {
+  position: relative;
+  background: var(--bg-cream);
+  padding-block: var(--section-pad);
+  overflow: hidden;
+}
+
+/* Soft ambient glow, mirrored top and bottom of the section */
+.sheen {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(55% 45% at 50% 0%, rgba(255, 255, 255, 0.55), transparent 70%),
+    radial-gradient(55% 45% at 50% 100%, rgba(255, 255, 255, 0.4), transparent 70%);
+  pointer-events: none;
+}
+
+.header {
+  position: relative;
+  text-align: center;
+  max-width: 40rem;
+  margin: 0 auto clamp(2.5rem, 5vw, 3.5rem);
+}
+
+.title {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: clamp(1.9rem, 4vw, 3rem);
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  color: var(--text);
+}
+
+.grid {
+  position: relative;
+  display: flex;
+  gap: 1.25rem;
+  max-width: 68rem;
+  margin-inline: auto;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  padding-bottom: 0.5rem;
+}
+
+.grid::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  text-align: center;
+  padding: 2.5rem 1.75rem 2.25rem;
+  border-radius: var(--radius-lg);
+  flex: 0 0 78%;
+  scroll-snap-align: start;
+  background: linear-gradient(
+    165deg,
+    rgba(255, 255, 255, 0.75) 0%,
+    rgba(255, 255, 255, 0.28) 45%,
+    rgba(255, 255, 255, 0.55) 100%
+  );
+  border-top: 1.5px solid rgba(165, 145, 82, 0.45);
+  border-bottom: 1.5px solid rgba(165, 145, 82, 0.45);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 30px 60px -35px rgba(90, 75, 40, 0.35);
+  transition: transform 0.4s var(--ease), box-shadow 0.4s var(--ease);
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  width: 55%;
+  height: 220%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.85),
+    rgba(230, 210, 170, 0.5),
+    transparent
+  );
+  transform: rotate(25deg) translateX(-40%);
+  transition: transform 0.9s var(--ease);
+  pointer-events: none;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 40px 70px -30px rgba(90, 75, 40, 0.45);
+}
+
+.card:hover::after {
+  transform: rotate(25deg) translateX(260%);
+}
+
+.cardTitle {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 0.6rem;
+}
+
+.cardText {
+  font-size: 0.92rem;
+  line-height: 1.5;
+  color: var(--text-soft);
+  max-width: 22rem;
+  margin-inline: auto;
+}
+
+/* ---------------------------------------------------------
+   Icon badge with mirrored reflection beneath it
+--------------------------------------------------------- */
+.iconStage {
+  position: relative;
+  width: 3.75rem;
+  margin: 0 auto 1.9rem;
+}
+
+.iconWrap {
+  position: relative;
+  z-index: 1;
+  width: 3.75rem;
+  height: 3.75rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(
+    circle at 30% 25%,
+    rgba(255, 255, 255, 0.95),
+    rgba(255, 255, 255, 0.35) 55%,
+    rgba(165, 145, 82, 0.18) 100%
+  );
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  box-shadow: inset 0 1px 3px rgba(255, 255, 255, 0.9), 0 10px 22px -10px rgba(125, 107, 61, 0.45);
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  color: var(--gold-dark);
+}
+
+/* Clipped viewport: shows only a thin mirrored sliver of the badge,
+   fading out, like a reflection on a glossy surface below it. */
+.iconReflection {
+  position: absolute;
+  top: calc(100% + 2px);
+  left: 0;
+  width: 100%;
+  height: 1.5rem;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.55), transparent);
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.55), transparent);
+}
+
+.iconReflectionInner {
+  width: 3.75rem;
+  height: 3.75rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(
+    circle at 30% 75%,
+    rgba(165, 145, 82, 0.3),
+    rgba(255, 255, 255, 0.3) 55%,
+    rgba(255, 255, 255, 0.6) 100%
+  );
+  transform: scaleY(-1);
+}
+
+.iconReflectionInner .icon {
+  opacity: 0.7;
+}
+
+.footer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: clamp(2.5rem, 5vw, 3.25rem);
+}
+
+.cta {
+  display: inline-flex;
+  align-items: center;
+  background: var(--gold);
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 700;
+  padding: 0.9rem 1.75rem;
+  border-radius: var(--radius-pill);
+  transition: background-color 0.25s var(--ease), transform 0.25s var(--ease);
+}
+
+.cta:hover {
+  background: var(--gold-dark);
+  transform: translateY(-1px);
+}
+
+/* ---------------------------------------------------------
+   Mobile-only slider navigation
+--------------------------------------------------------- */
+.mobileNavWrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.mobileNav {
+  display: inline-flex;
+  align-items: center;
+  background: var(--bg-white);
+  border-radius: var(--radius-pill);
+  padding: 6px;
+  box-shadow: 0 16px 32px -14px rgba(20, 22, 26, 0.3);
+}
+
+.mobileNav button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  border: none;
+  background: transparent;
+  color: var(--text-soft);
+  transition: background-color 0.25s var(--ease), color 0.25s var(--ease);
+}
+
+.mobileNav button:hover {
+  background: var(--bg-gold-soft);
+  color: var(--gold-dark);
+}
+
+.mobileNavDivider {
+  width: 1px;
+  height: 1.15rem;
+  background: var(--line);
+  flex-shrink: 0;
+}
+
+.mobileNav svg {
+  width: 16px;
+  height: 16px;
+}
+
+@media (min-width: 640px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    overflow: visible;
+    padding-bottom: 0;
+  }
+
+  .card {
+    flex: unset;
+    scroll-snap-align: unset;
+  }
+
+  .mobileNavWrap {
+    display: none;
+  }
+}
+
+@media (min-width: 1000px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

@@ -1,0 +1,61 @@
+.hero {
+  position: relative;
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: #262019;
+  padding-block: clamp(6rem, 12vw, 8rem) clamp(3rem, 6vw, 4rem);
+}
+
+.scene {
+  position: absolute;
+  inset: 0;
+  background: #14161a;
+}
+
+.photo {
+  object-fit: cover;
+  object-position: center 30%;
+  opacity: 0.9;
+}
+
+.grain {
+  position: absolute;
+  inset: 0;
+  opacity: 0.35;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.35'/%3E%3C/svg%3E");
+}
+
+.vignette {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    190deg,
+    rgba(10, 10, 12, 0.55) 0%,
+    rgba(10, 10, 12, 0.35) 35%,
+    rgba(10, 10, 12, 0.55) 70%,
+    rgba(10, 10, 12, 0.82) 100%
+  );
+}
+
+.inner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(1.4rem, 4.6vw, 3.5rem);
+  line-height: 1.22;
+  letter-spacing: -0.01em;
+  color: #eef4fc;
+  max-width: 56rem;
+  animation: rise-in 0.9s var(--ease) both;
+}
