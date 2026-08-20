@@ -29,7 +29,7 @@ export default function Experience() {
     <section className={styles.experience} aria-label="A experiência V1 Prime">
       <div
         ref={revealRef}
-        className={`container ${styles.header} reveal ${visible ? "reveal-visible" : ""}`}
+        className={`container ${styles.header} reveal-text ${visible ? "reveal-visible" : ""}`}
       >
         <h2 className={styles.title}>
           Entre. <br />

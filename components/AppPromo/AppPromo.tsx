@@ -14,7 +14,7 @@ export default function AppPromo() {
       <div className={`container ${styles.inner}`}>
         <div
           ref={copyRef}
-          className={`${styles.copy} reveal ${copyVisible ? "reveal-visible" : ""}`}
+          className={`${styles.copy} reveal-left ${copyVisible ? "reveal-visible" : ""}`}
         >
           <h2 className={styles.title}>
             Agende em segundos
@@ -38,7 +38,7 @@ export default function AppPromo() {
 
         <div
           ref={phoneRef}
-          className={`${styles.mockWrap} reveal ${phoneVisible ? "reveal-visible" : ""}`}
+          className={`${styles.mockWrap} reveal-right ${phoneVisible ? "reveal-visible" : ""}`}
         >
           <div className={styles.phone}>
             <div className={styles.phoneScreen}>

@@ -11,6 +11,7 @@ const NAV_LINKS = [
   { label: "Vantagens", href: "#vantagens" },
   { label: "Comparativo", href: "#comparativo" },
   { label: "Planos", href: "#planos" },
+  { label: "Contato", href: "#contato" },
 ];
 
 export default function Header() {

@@ -24,7 +24,8 @@ const OTHERS_POINTS = [
 
 export default function Comparison() {
   const [headerRef, headerVisible] = useReveal<HTMLDivElement>();
-  const [gridRef, gridVisible] = useReveal<HTMLDivElement>();
+  const [primeCardRef, primeCardVisible] = useReveal<HTMLDivElement>();
+  const [othersCardRef, othersCardVisible] = useReveal<HTMLDivElement>();
   const [primeListRef, primeListVisible] = useReveal<HTMLUListElement>();
   const [othersListRef, othersListVisible] = useReveal<HTMLUListElement>();
 
@@ -33,17 +34,17 @@ export default function Comparison() {
       <div className="container">
         <div
           ref={headerRef}
-          className={`${styles.header} reveal ${headerVisible ? "reveal-visible" : ""}`}
+          className={`${styles.header} reveal-text ${headerVisible ? "reveal-visible" : ""}`}
         >
           <span className={`eyebrow ${styles.eyebrow}`}>Comparativo</span>
           <h2 className={styles.title}>Por que o Prime está em outro nível?</h2>
         </div>
 
-        <div
-          ref={gridRef}
-          className={`${styles.grid} reveal-stagger ${gridVisible ? "reveal-visible" : ""}`}
-        >
-          <div className={`${styles.card} ${styles.cardPrime}`}>
+        <div className={styles.grid}>
+          <div
+            ref={primeCardRef}
+            className={`${styles.card} ${styles.cardPrime} reveal-left ${primeCardVisible ? "reveal-visible" : ""}`}
+          >
             <div className={styles.cardHead}>
               <Logo className={styles.cardLogo} />
             </div>
@@ -60,7 +61,10 @@ export default function Comparison() {
             </ul>
           </div>
 
-          <div className={`${styles.card} ${styles.cardOthers}`}>
+          <div
+            ref={othersCardRef}
+            className={`${styles.card} ${styles.cardOthers} reveal-right ${othersCardVisible ? "reveal-visible" : ""}`}
+          >
             <div className={styles.cardHead}>
               <Image
                 src="/images/outros-app-logo.webp"

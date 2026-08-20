@@ -7,6 +7,7 @@ import Pricing from "@/components/Pricing/Pricing";
 import AppPromo from "@/components/AppPromo/AppPromo";
 import Experience from "@/components/Experience/Experience";
 import Excellence from "@/components/Excellence/Excellence";
+import Contact from "@/components/Contact/Contact";
 import Footer from "@/components/Footer/Footer";
 
 export default function Home() {
@@ -22,6 +23,7 @@ export default function Home() {
         <AppPromo />
         <Experience />
         <Excellence />
+        <Contact />
       </main>
       <Footer />
     </>

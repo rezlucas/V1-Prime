@@ -10,7 +10,7 @@ export default function Highlight() {
     <section className={styles.highlight} aria-label="Mobilidade premium é uma escolha">
       <div
         ref={revealRef}
-        className={`container ${styles.inner} reveal ${visible ? "reveal-visible" : ""}`}
+        className={`container ${styles.inner} reveal-text ${visible ? "reveal-visible" : ""}`}
       >
         <h2 className={styles.title}>
           Mobilidade é uma necessidade.

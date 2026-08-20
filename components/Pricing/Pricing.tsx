@@ -99,7 +99,7 @@ export default function Pricing() {
       <div className="container">
         <div
           ref={headerRef}
-          className={`${styles.header} reveal ${headerVisible ? "reveal-visible" : ""}`}
+          className={`${styles.header} reveal-text ${headerVisible ? "reveal-visible" : ""}`}
         >
           <span className="eyebrow">Planos</span>
           <h2 className={styles.title}>

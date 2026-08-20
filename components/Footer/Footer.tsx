@@ -10,7 +10,7 @@ const COLUMNS = [
       "Imprensa",
       "Blog",
       "Iniciativas verdes",
-      "Fale com o V1",
+      { label: "Fale com o V1", href: "#contato" },
       "Trabalhe Conosco",
     ],
   },
@@ -90,11 +90,15 @@ export default function Footer() {
               <div key={col.title} className={styles.column}>
                 <h3>{col.title}</h3>
                 <ul>
-                  {col.links.map((link) => (
-                    <li key={link}>
-                      <a href="#">{link}</a>
-                    </li>
-                  ))}
+                  {col.links.map((link) => {
+                    const label = typeof link === "string" ? link : link.label;
+                    const href = typeof link === "string" ? "#" : link.href;
+                    return (
+                      <li key={label}>
+                        <a href={href}>{label}</a>
+                      </li>
+                    );
+                  })}
                 </ul>
               </div>
             ))}

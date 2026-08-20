@@ -149,6 +149,19 @@ p {
   }
 }
 
+@keyframes settle-in {
+  from {
+    opacity: 0;
+    transform: translateY(0.2em) scale(1.1);
+    filter: blur(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
+}
+
 /* ---------------------------------------------------------
    Motion: scroll-triggered section reveal (see hooks/useReveal.ts)
 --------------------------------------------------------- */
@@ -204,6 +217,53 @@ p {
 .reveal-stagger.reveal-visible > *:nth-child(4) { transition-delay: 0.3s; }
 .reveal-stagger.reveal-visible > *:nth-child(5) { transition-delay: 0.39s; }
 .reveal-stagger.reveal-visible > *:nth-child(6) { transition-delay: 0.48s; }
+
+/* ---------------------------------------------------------
+   Motion: headline "settle" reveal — text starts oversized and
+   slightly dropped, then scales down to its normal size as it
+   comes into view.
+--------------------------------------------------------- */
+.reveal-text {
+  opacity: 0;
+  transform: translateY(0.3em) scale(1.14);
+  filter: blur(10px);
+  transform-origin: center bottom;
+  transition: opacity 1s var(--ease), transform 1.1s var(--ease), filter 1s var(--ease);
+  will-change: opacity, transform, filter;
+}
+
+.reveal-text.reveal-visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  filter: blur(0);
+}
+
+/* ---------------------------------------------------------
+   Motion: horizontal reveal — for paired / mirrored layouts,
+   content slides in from the side instead of rising up.
+--------------------------------------------------------- */
+.reveal-left,
+.reveal-right {
+  opacity: 0;
+  filter: blur(4px);
+  transition: opacity 0.9s var(--ease), transform 0.9s var(--ease), filter 0.9s var(--ease);
+  will-change: opacity, transform, filter;
+}
+
+.reveal-left {
+  transform: translateX(-3.5rem);
+}
+
+.reveal-right {
+  transform: translateX(3.5rem);
+}
+
+.reveal-left.reveal-visible,
+.reveal-right.reveal-visible {
+  opacity: 1;
+  transform: translateX(0);
+  filter: blur(0);
+}
 
 @media (prefers-reduced-motion: reduce) {
   html {

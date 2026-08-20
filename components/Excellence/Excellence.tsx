@@ -61,7 +61,7 @@ export default function Excellence() {
       <div className="container">
         <div
           ref={headerRef}
-          className={`${styles.header} reveal ${headerVisible ? "reveal-visible" : ""}`}
+          className={`${styles.header} reveal-text ${headerVisible ? "reveal-visible" : ""}`}
         >
           <span className="eyebrow">Vantagens</span>
           <h2 className={styles.title}>Exclusividades que acompanham cada trajeto</h2>
