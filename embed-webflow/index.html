@@ -1,0 +1,566 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>V1 Prime</title>
+<meta name="description" content="Motorista dedicado, atendimento garantido via WhatsApp e zero cancelamentos. Assine um plano V1 Prime e viva a experiência de ter um motorista particular." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/styles.css" />
+<style>
+  html { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+</style>
+</head>
+<body>
+<div class="v1-prime">
+
+  <!-- ==========================================================
+       Header
+       ========================================================== -->
+  <header class="v1-header" id="v1-header">
+    <div class="container v1-header__bar">
+      <a href="#" class="v1-header__logo" aria-label="V1 Prime, início">
+        <svg class="v1-header__logo-mark" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M51.7167 51.6665C51.6208 52.1672 51.147 52.5779 50.6254 52.5779H44.1371C43.6155 52.5779 43.2377 52.1672 43.3306 51.6665L44.7698 44.6959L48.0828 26.4044L48.2807 24.9803H44.5209C43.9992 24.9803 43.6215 24.5666 43.7144 24.0659L45.4984 19.3648C45.5913 18.8611 46.116 18.4954 46.6347 18.4954H56.6758C57.1975 18.4954 57.5273 18.8611 57.4344 19.3648V19.3918C57.4254 19.4188 57.4344 19.4398 57.4314 19.4638L52.7451 45.1996L51.7227 51.6665H51.7167ZM15.9177 47.8619L14.0228 19.5567V19.5117C14.0228 18.9631 14.4515 18.6003 15.0182 18.6003H21.3715C21.8452 18.6003 22.178 18.9661 22.178 19.4218L23.2304 44.8728C23.2334 46.5907 23.5512 48.9352 25.0114 50.6172C25.638 51.3397 26.4265 51.8674 27.35 52.2062C25.9078 52.7848 24.3397 52.9317 22.8406 52.9317C19.5695 52.9317 16.1995 52.2482 15.9147 47.8649M28.8131 51.4267C27.5988 51.2228 26.6244 50.7101 25.9138 49.8916C24.9784 48.8153 24.5976 47.3582 24.4657 46.0421C24.5106 45.9611 24.5526 45.8712 24.5946 45.7632L35.3613 19.4188C35.5502 18.9601 35.931 18.5943 36.4017 18.5943H43.2797C43.7054 18.5943 43.9423 18.8222 43.9423 19.143C43.9423 19.2809 43.8973 19.4188 43.8463 19.5537L31.6105 47.8619C30.8879 49.5319 29.9165 50.6622 28.8101 51.4267M57.3954 0H0V57.3929C0 64.3276 5.67568 70 12.6076 70H70V12.6071C70 5.67243 64.3273 0 57.3924 0" fill="currentColor" />
+        </svg>
+      </a>
+
+      <nav class="v1-header__nav" aria-label="Navegação principal">
+        <ul>
+          <li><a href="#servicos">Nossos serviços</a></li>
+          <li><a href="#vantagens">Vantagens</a></li>
+          <li><a href="#comparativo">Comparativo</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+
+      <button type="button" class="v1-header__burger" id="v1-burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="v1-mobile-menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 6.5h17M3.5 12h17M3.5 17.5h17" /></svg>
+      </button>
+    </div>
+
+    <div id="v1-mobile-menu" class="v1-header__mobile-menu">
+      <nav aria-label="Navegação mobile">
+        <ul>
+          <li><a href="#servicos">Nossos serviços</a></li>
+          <li><a href="#vantagens">Vantagens</a></li>
+          <li><a href="#comparativo">Comparativo</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ==========================================================
+         Hero
+         ========================================================== -->
+    <section class="v1-hero" aria-label="Apresentação">
+      <div aria-hidden="true">
+        <img class="v1-hero__photo" src="images/hero/hero.webp" alt="" />
+        <div class="v1-hero__grain"></div>
+        <div class="v1-hero__vignette"></div>
+      </div>
+
+      <div class="container v1-hero__inner">
+        <h1 class="v1-hero__title">Sua rotina, conduzida.</h1>
+        <p class="v1-hero__subtitle">
+          V1 Prime é a assinatura de mobilidade que opera pela sua rotina:
+          motorista dedicado, atendimento pelo WhatsApp e presença garantida
+          em cada trajeto.
+        </p>
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         Highlight
+         ========================================================== -->
+    <section class="v1-highlight" aria-label="Escolha uma marca que cuida da sua mobilidade">
+      <div class="container v1-highlight__inner reveal-text" data-reveal>
+        <h2 class="v1-highlight__title">
+          Mobilidade é uma necessidade.
+          <br />
+          Escolha uma marca que cuida disso para você.
+        </h2>
+        <p class="v1-highlight__subtitle">
+          V1 Prime é a assinatura de mobilidade para quem sabe o valor do
+          tempo e valoriza boas experiências.
+        </p>
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         Services
+         ========================================================== -->
+    <section class="v1-services" id="servicos" aria-label="Nossos serviços">
+      <div class="container">
+        <ul class="v1-services__track reveal-stagger" data-reveal id="v1-services-track">
+          <li class="v1-services__card">
+            <div class="v1-services__card-art">
+              <img class="v1-services__card-image" src="images/services/empresarios.jpeg" alt="" loading="lazy" />
+            </div>
+            <div class="v1-services__card-body">
+              <span class="v1-services__card-eyebrow">Para empresários e executivos</span>
+              <h3 class="v1-services__card-title">Sua agenda continua em movimento.</h3>
+              <p class="v1-services__card-text">Reuniões em locais diferentes e viagens frequentes. Um motorista dedicado conduz sua rotina, com presença garantida em cada trajeto.</p>
+              <a href="#contato" class="v1-services__card-link">Saiba mais</a>
+            </div>
+          </li>
+          <li class="v1-services__card">
+            <div class="v1-services__card-art">
+              <img class="v1-services__card-image" src="images/services/familias.webp" alt="" loading="lazy" />
+            </div>
+            <div class="v1-services__card-body">
+              <span class="v1-services__card-eyebrow">Para famílias</span>
+              <h3 class="v1-services__card-title">Segurança em cada trajeto dos seus filhos.</h3>
+              <p class="v1-services__card-text">Da escola às atividades extracurriculares, motoristas de confiança e comunicação constante para sua tranquilidade.</p>
+              <a href="#contato" class="v1-services__card-link">Saiba mais</a>
+            </div>
+          </li>
+          <li class="v1-services__card">
+            <div class="v1-services__card-art">
+              <img class="v1-services__card-image" src="images/services/ocasioes.webp" alt="" loading="lazy" />
+            </div>
+            <div class="v1-services__card-body">
+              <span class="v1-services__card-eyebrow">Para turismo e viagens</span>
+              <h3 class="v1-services__card-title">Presença que começa antes do destino.</h3>
+              <p class="v1-services__card-text">Assistência com bagagens, pontualidade e acompanhamento em cada compromisso, do aeroporto ao hotel.</p>
+              <a href="#contato" class="v1-services__card-link">Saiba mais</a>
+            </div>
+          </li>
+          <li class="v1-services__card">
+            <div class="v1-services__card-art">
+              <img class="v1-services__card-image" src="images/services/rotina.png" alt="" loading="lazy" />
+            </div>
+            <div class="v1-services__card-body">
+              <span class="v1-services__card-eyebrow">Para advogados</span>
+              <h3 class="v1-services__card-title">Seu compromisso começa antes mesmo da chegada.</h3>
+              <p class="v1-services__card-text">Privacidade para ligações confidenciais, tempo para revisar documentos e a pontualidade que decisões estratégicas exigem.</p>
+              <a href="#contato" class="v1-services__card-link">Saiba mais</a>
+            </div>
+          </li>
+        </ul>
+
+        <div class="v1-services__nav-wrap">
+          <div class="v1-services__nav">
+            <button type="button" aria-label="Anterior" data-scroll-target="v1-services-track" data-scroll-dir="-1">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19.5 12h-15M10.5 6l-6 6 6 6" /></svg>
+            </button>
+            <span class="v1-services__nav-divider" aria-hidden="true"></span>
+            <button type="button" aria-label="Próximo" data-scroll-target="v1-services-track" data-scroll-dir="1">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 12h15M13.5 6l6 6-6 6" /></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         Comparison
+         ========================================================== -->
+    <section class="v1-comparison" id="comparativo" aria-label="Por que é uma nova experiência em mobilidade">
+      <div class="container">
+        <div class="v1-comparison__header reveal-text" data-reveal>
+          <span class="eyebrow v1-comparison__eyebrow">Comparativo</span>
+          <h2 class="v1-comparison__title">Por que é uma nova experiência em mobilidade?</h2>
+        </div>
+
+        <div class="v1-comparison__grid">
+          <div class="v1-comparison__card v1-comparison__card--prime reveal-left" data-reveal>
+            <div class="v1-comparison__card-head">
+              <svg class="v1-comparison__card-logo" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M51.7167 51.6665C51.6208 52.1672 51.147 52.5779 50.6254 52.5779H44.1371C43.6155 52.5779 43.2377 52.1672 43.3306 51.6665L44.7698 44.6959L48.0828 26.4044L48.2807 24.9803H44.5209C43.9992 24.9803 43.6215 24.5666 43.7144 24.0659L45.4984 19.3648C45.5913 18.8611 46.116 18.4954 46.6347 18.4954H56.6758C57.1975 18.4954 57.5273 18.8611 57.4344 19.3648V19.3918C57.4254 19.4188 57.4344 19.4398 57.4314 19.4638L52.7451 45.1996L51.7227 51.6665H51.7167ZM15.9177 47.8619L14.0228 19.5567V19.5117C14.0228 18.9631 14.4515 18.6003 15.0182 18.6003H21.3715C21.8452 18.6003 22.178 18.9661 22.178 19.4218L23.2304 44.8728C23.2334 46.5907 23.5512 48.9352 25.0114 50.6172C25.638 51.3397 26.4265 51.8674 27.35 52.2062C25.9078 52.7848 24.3397 52.9317 22.8406 52.9317C19.5695 52.9317 16.1995 52.2482 15.9147 47.8649M28.8131 51.4267C27.5988 51.2228 26.6244 50.7101 25.9138 49.8916C24.9784 48.8153 24.5976 47.3582 24.4657 46.0421C24.5106 45.9611 24.5526 45.8712 24.5946 45.7632L35.3613 19.4188C35.5502 18.9601 35.931 18.5943 36.4017 18.5943H43.2797C43.7054 18.5943 43.9423 18.8222 43.9423 19.143C43.9423 19.2809 43.8973 19.4188 43.8463 19.5537L31.6105 47.8619C30.8879 49.5319 29.9165 50.6622 28.8101 51.4267M57.3954 0H0V57.3929C0 64.3276 5.67568 70 12.6076 70H70V12.6071C70 5.67243 64.3273 0 57.3924 0" fill="currentColor" />
+              </svg>
+            </div>
+            <ul class="v1-comparison__list reveal-stagger" data-reveal>
+              <li><svg class="v1-comparison__check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5 9.5 17 19 6.5" /></svg>Tarifa fixa por assinatura, sem surpresas</li>
+              <li><svg class="v1-comparison__check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5 9.5 17 19 6.5" /></svg>Motorista dedicado à sua rotina</li>
+              <li><svg class="v1-comparison__check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5 9.5 17 19 6.5" /></svg>Frota própria, híbrida e padronizada</li>
+              <li><svg class="v1-comparison__check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5 9.5 17 19 6.5" /></svg>Atendimento direto via WhatsApp</li>
+              <li><svg class="v1-comparison__check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5 9.5 17 19 6.5" /></svg>Presença garantida, zero cancelamento</li>
+            </ul>
+          </div>
+
+          <div class="v1-comparison__card v1-comparison__card--others reveal-right" data-reveal>
+            <div class="v1-comparison__card-head">
+              <img class="v1-comparison__others-logo" src="images/outros-app-logo.webp" alt="Outros apps" width="140" height="57" loading="lazy" />
+            </div>
+            <ul class="v1-comparison__list reveal-stagger" data-reveal>
+              <li><svg class="v1-comparison__x-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18" /></svg>Preço dinâmico, muda a qualquer hora</li>
+              <li><svg class="v1-comparison__x-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18" /></svg>Motorista diferente a cada trajeto</li>
+              <li><svg class="v1-comparison__x-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18" /></svg>Carros terceirizados, sem padrão</li>
+              <li><svg class="v1-comparison__x-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18" /></svg>Atendimento só dentro do app</li>
+              <li><svg class="v1-comparison__x-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18" /></svg>Risco de cancelamento a qualquer momento</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="v1-comparison__footer">
+          <a href="#contato" class="v1-comparison__cta">Conheça a assinatura</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         Experience
+         ========================================================== -->
+    <section class="v1-experience" aria-label="A experiência V1 Prime">
+      <div class="container v1-experience__header reveal-text" data-reveal>
+        <h2 class="v1-experience__title">
+          Entre. <br />
+          Respire.
+        </h2>
+        <p class="v1-experience__subtitle">
+          A marca operando pela sua rotina, com motorista dedicado e
+          atendimento garantido.
+        </p>
+      </div>
+
+      <div class="v1-experience__stack">
+        <div class="v1-experience__stack-item" style="z-index: 1">
+          <article class="v1-experience__card">
+            <img class="v1-experience__card-image" src="images/experience/acolhimento.png" alt="" loading="lazy" />
+            <div class="v1-experience__scrim"></div>
+            <div class="v1-experience__overlay">
+              <h3>Você é recebido com cuidado</h3>
+              <p>A porta é aberta para você. Sua bagagem é guardada. Tudo é cuidado.</p>
+            </div>
+          </article>
+        </div>
+        <div class="v1-experience__stack-item" style="z-index: 2">
+          <article class="v1-experience__card">
+            <img class="v1-experience__card-image" src="images/experience/tom.webp" alt="" loading="lazy" />
+            <div class="v1-experience__scrim"></div>
+            <div class="v1-experience__overlay">
+              <h3>Você dá o tom</h3>
+              <p>Relaxe. Música e temperatura ajustadas às suas preferências, sempre.</p>
+            </div>
+          </article>
+        </div>
+        <div class="v1-experience__stack-item" style="z-index: 3">
+          <article class="v1-experience__card">
+            <img class="v1-experience__card-image" src="images/experience/imprevistos.jpeg" alt="" loading="lazy" />
+            <div class="v1-experience__scrim"></div>
+            <div class="v1-experience__overlay">
+              <h3>Presença garantida</h3>
+              <p>Motorista dedicado, pontualidade e atenção em cada detalhe do trajeto.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         AppPromo (WhatsApp)
+         ========================================================== -->
+    <section class="v1-apppromo" aria-label="Atendimento via WhatsApp">
+      <div class="container v1-apppromo__inner">
+        <div class="v1-apppromo__copy reveal-left" data-reveal>
+          <h2 class="v1-apppromo__title">
+            Direto
+            <br />
+            pelo WhatsApp.
+          </h2>
+          <p class="v1-apppromo__text">
+            Um canal direto e rápido para o que você precisar. Fale com o
+            V1 Prime e organize seu próximo trajeto em poucos toques, sem
+            precisar baixar nenhum aplicativo.
+          </p>
+
+          <a href="#contato" class="v1-apppromo__badge">
+            <svg class="v1-apppromo__badge-icon" viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12.04 2c-5.5 0-9.96 4.46-9.96 9.96 0 1.76.46 3.4 1.26 4.83L2 22l5.36-1.28a9.9 9.9 0 0 0 4.68 1.18h.01c5.5 0 9.96-4.46 9.96-9.96 0-2.66-1.04-5.16-2.92-7.04A9.9 9.9 0 0 0 12.04 2Zm5.83 14.1c-.25.7-1.24 1.28-2.02 1.44-.54.11-1.24.2-3.6-.77-3.02-1.25-4.97-4.32-5.12-4.52-.15-.2-1.22-1.63-1.22-3.1 0-1.48.77-2.2 1.05-2.5.27-.3.6-.37.8-.37h.58c.19 0 .44-.07.68.53.25.6.85 2.08.92 2.23.07.15.12.33.02.53-.1.2-.15.32-.3.5-.15.17-.32.39-.45.52-.15.15-.31.31-.13.61.17.3.77 1.28 1.66 2.08 1.14 1.02 2.1 1.34 2.4 1.49.3.15.48.13.65-.07.18-.2.75-.87.95-1.17.2-.3.4-.25.68-.15.27.1 1.75.83 2.05.98.3.15.5.22.57.35.07.13.07.75-.18 1.45Z" /></svg>
+            <span>
+              <small>Fale agora</small>
+              Canal V1 Prime no WhatsApp
+            </span>
+          </a>
+        </div>
+
+        <div class="v1-apppromo__mockwrap reveal-right" data-reveal>
+          <div class="v1-apppromo__phone">
+            <div class="v1-apppromo__phone-screen">
+              <div class="v1-apppromo__phone-header">
+                <span class="v1-apppromo__phone-avatar">V1</span>
+                <div>
+                  <p class="v1-apppromo__phone-name">V1 Prime</p>
+                  <p class="v1-apppromo__phone-status">online</p>
+                </div>
+              </div>
+
+              <div class="v1-apppromo__phone-chat reveal-stagger" data-reveal>
+                <div class="v1-apppromo__bubble-in">Olá! Vim pelo plano Essencial 👋</div>
+                <div class="v1-apppromo__bubble-out">Perfeito! Para quando você precisa do motorista?</div>
+                <div class="v1-apppromo__bubble-in">Hoje, 18h. Rua Augusta, 100</div>
+                <div class="v1-apppromo__bubble-out">Confirmado ✅ Seu motorista chega às 18h em ponto.</div>
+              </div>
+
+              <div class="v1-apppromo__phone-input-bar">
+                <span>Digite uma mensagem</span>
+              </div>
+            </div>
+          </div>
+          <div class="v1-apppromo__glow" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         Excellence
+         ========================================================== -->
+    <section class="v1-excellence" id="vantagens" aria-label="A carteira de privilégios da sua assinatura">
+      <div class="v1-excellence__sheen" aria-hidden="true"></div>
+      <div class="container">
+        <div class="v1-excellence__header reveal-text" data-reveal>
+          <span class="eyebrow">Vantagens</span>
+          <h2 class="v1-excellence__title">
+            A carteira de privilégios
+            <br />
+            da sua assinatura
+          </h2>
+        </div>
+
+        <ul class="v1-excellence__grid reveal-stagger" data-reveal id="v1-excellence-track">
+          <li class="v1-excellence__card">
+            <div class="v1-excellence__icon-stage">
+              <div class="v1-excellence__icon-wrap">
+                <svg class="v1-excellence__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.25" /><path d="M12 7.5V12l3 2" /></svg>
+              </div>
+              <div class="v1-excellence__icon-reflection" aria-hidden="true">
+                <div class="v1-excellence__icon-reflection-inner">
+                  <svg class="v1-excellence__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.25" /><path d="M12 7.5V12l3 2" /></svg>
+                </div>
+              </div>
+            </div>
+            <h3 class="v1-excellence__card-title">Flexibilidade total</h3>
+            <p class="v1-excellence__card-text">Planos personalizados para o seu estilo de vida.</p>
+          </li>
+
+          <li class="v1-excellence__card">
+            <div class="v1-excellence__icon-stage">
+              <div class="v1-excellence__icon-wrap">
+                <svg class="v1-excellence__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5 19 6v6c0 4.2-3 7-7 8.5-4-1.5-7-4.3-7-8.5V6l7-2.5Z" /><path d="M9 12l2 2 4-4.2" /></svg>
+              </div>
+              <div class="v1-excellence__icon-reflection" aria-hidden="true">
+                <div class="v1-excellence__icon-reflection-inner">
+                  <svg class="v1-excellence__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5 19 6v6c0 4.2-3 7-7 8.5-4-1.5-7-4.3-7-8.5V6l7-2.5Z" /><path d="M9 12l2 2 4-4.2" /></svg>
+                </div>
+              </div>
+            </div>
+            <h3 class="v1-excellence__card-title">Sem cancelamentos</h3>
+            <p class="v1-excellence__card-text">Compromisso de disponibilidade garantida em todos os deslocamentos.</p>
+          </li>
+
+          <li class="v1-excellence__card">
+            <div class="v1-excellence__icon-stage">
+              <div class="v1-excellence__icon-wrap">
+                <svg class="v1-excellence__icon" viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12.04 2c-5.5 0-9.96 4.46-9.96 9.96 0 1.76.46 3.4 1.26 4.83L2 22l5.36-1.28a9.9 9.9 0 0 0 4.68 1.18h.01c5.5 0 9.96-4.46 9.96-9.96 0-2.66-1.04-5.16-2.92-7.04A9.9 9.9 0 0 0 12.04 2Zm5.83 14.1c-.25.7-1.24 1.28-2.02 1.44-.54.11-1.24.2-3.6-.77-3.02-1.25-4.97-4.32-5.12-4.52-.15-.2-1.22-1.63-1.22-3.1 0-1.48.77-2.2 1.05-2.5.27-.3.6-.37.8-.37h.58c.19 0 .44-.07.68.53.25.6.85 2.08.92 2.23.07.15.12.33.02.53-.1.2-.15.32-.3.5-.15.17-.32.39-.45.52-.15.15-.31.31-.13.61.17.3.77 1.28 1.66 2.08 1.14 1.02 2.1 1.34 2.4 1.49.3.15.48.13.65-.07.18-.2.75-.87.95-1.17.2-.3.4-.25.68-.15.27.1 1.75.83 2.05.98.3.15.5.22.57.35.07.13.07.75-.18 1.45Z" /></svg>
+              </div>
+              <div class="v1-excellence__icon-reflection" aria-hidden="true">
+                <div class="v1-excellence__icon-reflection-inner">
+                  <svg class="v1-excellence__icon" viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12.04 2c-5.5 0-9.96 4.46-9.96 9.96 0 1.76.46 3.4 1.26 4.83L2 22l5.36-1.28a9.9 9.9 0 0 0 4.68 1.18h.01c5.5 0 9.96-4.46 9.96-9.96 0-2.66-1.04-5.16-2.92-7.04A9.9 9.9 0 0 0 12.04 2Zm5.83 14.1c-.25.7-1.24 1.28-2.02 1.44-.54.11-1.24.2-3.6-.77-3.02-1.25-4.97-4.32-5.12-4.52-.15-.2-1.22-1.63-1.22-3.1 0-1.48.77-2.2 1.05-2.5.27-.3.6-.37.8-.37h.58c.19 0 .44-.07.68.53.25.6.85 2.08.92 2.23.07.15.12.33.02.53-.1.2-.15.32-.3.5-.15.17-.32.39-.45.52-.15.15-.31.31-.13.61.17.3.77 1.28 1.66 2.08 1.14 1.02 2.1 1.34 2.4 1.49.3.15.48.13.65-.07.18-.2.75-.87.95-1.17.2-.3.4-.25.68-.15.27.1 1.75.83 2.05.98.3.15.5.22.57.35.07.13.07.75-.18 1.45Z" /></svg>
+                </div>
+              </div>
+            </div>
+            <h3 class="v1-excellence__card-title">Atendimento via WhatsApp</h3>
+            <p class="v1-excellence__card-text">Um canal direto e rápido para o que você precisar.</p>
+          </li>
+
+          <li class="v1-excellence__card">
+            <div class="v1-excellence__icon-stage">
+              <div class="v1-excellence__icon-wrap">
+                <svg class="v1-excellence__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 19c8 0 12.5-4.5 12.5-13.5C9.5 5.5 5 10 5 18" /><path d="M6.5 18.5 15 10" /></svg>
+              </div>
+              <div class="v1-excellence__icon-reflection" aria-hidden="true">
+                <div class="v1-excellence__icon-reflection-inner">
+                  <svg class="v1-excellence__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 19c8 0 12.5-4.5 12.5-13.5C9.5 5.5 5 10 5 18" /><path d="M6.5 18.5 15 10" /></svg>
+                </div>
+              </div>
+            </div>
+            <h3 class="v1-excellence__card-title">Frota própria e híbrida</h3>
+            <p class="v1-excellence__card-text">Veículos próprios, mais sustentáveis e sempre em dia, sem terceirização.</p>
+          </li>
+
+          <li class="v1-excellence__card">
+            <div class="v1-excellence__icon-stage">
+              <div class="v1-excellence__icon-wrap">
+                <svg class="v1-excellence__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.75 14.3 9.6l6.2.5-4.7 4 1.5 6-5.3-3.3-5.3 3.3 1.5-6-4.7-4 6.2-.5Z" /></svg>
+              </div>
+              <div class="v1-excellence__icon-reflection" aria-hidden="true">
+                <div class="v1-excellence__icon-reflection-inner">
+                  <svg class="v1-excellence__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.75 14.3 9.6l6.2.5-4.7 4 1.5 6-5.3-3.3-5.3 3.3 1.5-6-4.7-4 6.2-.5Z" /></svg>
+                </div>
+              </div>
+            </div>
+            <h3 class="v1-excellence__card-title">Motoristas dedicados</h3>
+            <p class="v1-excellence__card-text">Profissionais treinados para cuidar de cada detalhe, sempre à sua disposição.</p>
+          </li>
+
+          <li class="v1-excellence__card">
+            <div class="v1-excellence__icon-stage">
+              <div class="v1-excellence__icon-wrap">
+                <svg class="v1-excellence__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-6.75-6.06-6.75-11A6.75 6.75 0 0 1 12 3.25 6.75 6.75 0 0 1 18.75 10c0 4.94-6.75 11-6.75 11Z" /><circle cx="12" cy="10" r="2.25" /></svg>
+              </div>
+              <div class="v1-excellence__icon-reflection" aria-hidden="true">
+                <div class="v1-excellence__icon-reflection-inner">
+                  <svg class="v1-excellence__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-6.75-6.06-6.75-11A6.75 6.75 0 0 1 12 3.25 6.75 6.75 0 0 1 18.75 10c0 4.94-6.75 11-6.75 11Z" /><circle cx="12" cy="10" r="2.25" /></svg>
+                </div>
+              </div>
+            </div>
+            <h3 class="v1-excellence__card-title">Rastreamento em tempo real</h3>
+            <p class="v1-excellence__card-text">Acompanhe o trajeto ao vivo, do início ao fim, com total segurança.</p>
+          </li>
+        </ul>
+
+        <div class="v1-excellence__mobile-nav-wrap">
+          <div class="v1-excellence__mobile-nav">
+            <button type="button" aria-label="Anterior" data-scroll-target="v1-excellence-track" data-scroll-dir="-1">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19.5 12h-15M10.5 6l-6 6 6 6" /></svg>
+            </button>
+            <span class="v1-excellence__mobile-nav-divider" aria-hidden="true"></span>
+            <button type="button" aria-label="Próximo" data-scroll-target="v1-excellence-track" data-scroll-dir="1">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 12h15M13.5 6l6 6-6 6" /></svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="v1-excellence__footer">
+          <a href="#contato" class="v1-excellence__cta">Fale com a V1 Prime</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         Contact
+         ========================================================== -->
+    <section id="contato" class="v1-contact" aria-label="Fale com a gente">
+      <div class="container">
+        <div class="v1-contact__header reveal-text" data-reveal>
+          <span class="eyebrow">Contato</span>
+          <h2 class="v1-contact__title">Fale com a gente</h2>
+          <p class="v1-contact__subtitle">
+            Preencha o formulário e nosso time entra em contato para
+            apresentar o plano ideal para você.
+          </p>
+        </div>
+
+        <div class="v1-contact__form-card reveal" data-reveal>
+          <div
+            class="hs-form-frame"
+            data-region="na1"
+            data-form-id="74ae0c6c-6e9b-47ad-833c-587a0c96a8f1"
+            data-portal-id="50353110"
+          ></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================
+       Footer
+       ========================================================== -->
+  <footer class="v1-footer" id="ajuda">
+    <div class="container">
+      <div class="v1-footer__top">
+        <div class="v1-footer__brand">
+          <span class="v1-footer__logo">
+            <svg class="v1-footer__logo-mark" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M51.7167 51.6665C51.6208 52.1672 51.147 52.5779 50.6254 52.5779H44.1371C43.6155 52.5779 43.2377 52.1672 43.3306 51.6665L44.7698 44.6959L48.0828 26.4044L48.2807 24.9803H44.5209C43.9992 24.9803 43.6215 24.5666 43.7144 24.0659L45.4984 19.3648C45.5913 18.8611 46.116 18.4954 46.6347 18.4954H56.6758C57.1975 18.4954 57.5273 18.8611 57.4344 19.3648V19.3918C57.4254 19.4188 57.4344 19.4398 57.4314 19.4638L52.7451 45.1996L51.7227 51.6665H51.7167ZM15.9177 47.8619L14.0228 19.5567V19.5117C14.0228 18.9631 14.4515 18.6003 15.0182 18.6003H21.3715C21.8452 18.6003 22.178 18.9661 22.178 19.4218L23.2304 44.8728C23.2334 46.5907 23.5512 48.9352 25.0114 50.6172C25.638 51.3397 26.4265 51.8674 27.35 52.2062C25.9078 52.7848 24.3397 52.9317 22.8406 52.9317C19.5695 52.9317 16.1995 52.2482 15.9147 47.8649M28.8131 51.4267C27.5988 51.2228 26.6244 50.7101 25.9138 49.8916C24.9784 48.8153 24.5976 47.3582 24.4657 46.0421C24.5106 45.9611 24.5526 45.8712 24.5946 45.7632L35.3613 19.4188C35.5502 18.9601 35.931 18.5943 36.4017 18.5943H43.2797C43.7054 18.5943 43.9423 18.8222 43.9423 19.143C43.9423 19.2809 43.8973 19.4188 43.8463 19.5537L31.6105 47.8619C30.8879 49.5319 29.9165 50.6622 28.8101 51.4267M57.3954 0H0V57.3929C0 64.3276 5.67568 70 12.6076 70H70V12.6071C70 5.67243 64.3273 0 57.3924 0" fill="currentColor" />
+            </svg>
+            V1 Prime
+          </span>
+          <p class="v1-footer__tagline">
+            Assinatura de mobilidade com motorista dedicado e atendimento
+            garantido via WhatsApp.
+          </p>
+          <p class="v1-footer__seal">Parte do Grupo Águia Branca e da VIXPar.</p>
+          <div class="v1-footer__socials">
+            <a href="#" aria-label="Instagram" class="v1-footer__social">
+              <svg viewBox="0 0 24 24" width="17" height="17" fill="currentColor" aria-hidden="true"><path d="M12 8.2a3.8 3.8 0 1 0 0 7.6 3.8 3.8 0 0 0 0-7.6Zm0 6.27a2.47 2.47 0 1 1 0-4.94 2.47 2.47 0 0 1 0 4.94ZM16.9 3H7.1A4.1 4.1 0 0 0 3 7.1v9.8A4.1 4.1 0 0 0 7.1 21h9.8a4.1 4.1 0 0 0 4.1-4.1V7.1A4.1 4.1 0 0 0 16.9 3Zm2.77 13.9a2.77 2.77 0 0 1-2.77 2.77H7.1a2.77 2.77 0 0 1-2.77-2.77V7.1A2.77 2.77 0 0 1 7.1 4.33h9.8a2.77 2.77 0 0 1 2.77 2.77v9.8ZM17.02 6.4a.98.98 0 1 0 0 1.96.98.98 0 0 0 0-1.96Z" /></svg>
+            </a>
+            <a href="#" aria-label="LinkedIn" class="v1-footer__social">
+              <svg viewBox="0 0 24 24" width="17" height="17" fill="currentColor" aria-hidden="true"><path d="M6.94 8.5H4.1V20h2.84V8.5ZM5.52 3.5A1.65 1.65 0 1 0 5.53 6.8a1.65 1.65 0 0 0 0-3.3ZM20 13.3c0-3-1.6-4.4-3.75-4.4a3.24 3.24 0 0 0-2.94 1.62V8.5H10.5c.04.8 0 11.5 0 11.5h2.83v-6.4c0-.34.02-.68.12-.93.27-.68.9-1.4 1.94-1.4 1.37 0 1.92 1.05 1.92 2.58V20H20v-6.7Z" /></svg>
+            </a>
+            <a href="#" aria-label="Facebook" class="v1-footer__social">
+              <svg viewBox="0 0 24 24" width="17" height="17" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-7.9h2.65l.4-3.08h-3.05V8.05c0-.89.25-1.5 1.52-1.5h1.63V3.86c-.28-.04-1.25-.12-2.37-.12-2.35 0-3.96 1.43-3.96 4.06v2.27H7.66v3.07h2.66V21h3.18Z" /></svg>
+            </a>
+            <a href="#" aria-label="TikTok" class="v1-footer__social">
+              <svg viewBox="0 0 24 24" width="17" height="17" fill="currentColor" aria-hidden="true"><path d="M14.5 3h2.6c.15 1.5 1 2.9 2.4 3.6.7.35 1.5.5 2.3.5v2.7c-1.5 0-2.9-.45-4.1-1.3v6.9c0 3-2.4 5.4-5.4 5.4S6.9 17.4 6.9 14.4c0-2.9 2.2-5.2 5-5.4v2.8c-1.3.2-2.3 1.3-2.3 2.6a2.7 2.7 0 0 0 5.4 0V3Z" /></svg>
+            </a>
+            <a href="#" aria-label="YouTube" class="v1-footer__social">
+              <svg viewBox="0 0 24 24" width="17" height="17" fill="currentColor" aria-hidden="true"><path d="M21.5 7.4a2.8 2.8 0 0 0-1.97-1.98C17.8 5 12 5 12 5s-5.8 0-7.53.42A2.8 2.8 0 0 0 2.5 7.4 29.6 29.6 0 0 0 2.08 12a29.6 29.6 0 0 0 .42 4.6 2.8 2.8 0 0 0 1.97 1.98C6.2 19 12 19 12 19s5.8 0 7.53-.42a2.8 2.8 0 0 0 1.97-1.98A29.6 29.6 0 0 0 21.92 12a29.6 29.6 0 0 0-.42-4.6ZM10 15V9l5.2 3-5.2 3Z" /></svg>
+            </a>
+            <a href="#" aria-label="X" class="v1-footer__social">
+              <svg viewBox="0 0 24 24" width="17" height="17" fill="currentColor" aria-hidden="true"><path d="M13.6 10.6 20 3h-1.9l-5.5 6.5L8.3 3H3l6.7 9.6L3 20h1.9l5.9-6.9 5.5 6.9H21l-7.4-9.4Z" /></svg>
+            </a>
+          </div>
+        </div>
+
+        <nav class="v1-footer__columns" aria-label="Links do rodapé">
+          <div class="v1-footer__column">
+            <h3>Empresa</h3>
+            <ul>
+              <li><a href="#">Como funciona</a></li>
+              <li><a href="#">Carreiras</a></li>
+              <li><a href="#">Imprensa</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Iniciativas verdes</a></li>
+              <li><a href="#contato">Fale com o V1</a></li>
+              <li><a href="#">Trabalhe Conosco</a></li>
+            </ul>
+          </div>
+          <div class="v1-footer__column">
+            <h3>V1 Prime para empresas</h3>
+            <ul>
+              <li><a href="#">Visão geral</a></li>
+              <li><a href="#">Corporações</a></li>
+              <li><a href="#">Agências de viagem</a></li>
+              <li><a href="#">Parcerias estratégicas</a></li>
+            </ul>
+          </div>
+          <div class="v1-footer__column">
+            <h3>Nossos planos</h3>
+            <ul>
+              <li><a href="#">Individual</a></li>
+              <li><a href="#">Essencial</a></li>
+              <li><a href="#">Plus</a></li>
+              <li><a href="#">Familiar</a></li>
+            </ul>
+          </div>
+          <div class="v1-footer__column">
+            <h3>Explorar</h3>
+            <ul>
+              <li><a href="#">Para empresários</a></li>
+              <li><a href="#">Para famílias</a></li>
+              <li><a href="#">Para turismo e viagens</a></li>
+              <li><a href="#">Para advogados</a></li>
+            </ul>
+          </div>
+          <div class="v1-footer__column">
+            <h3>Legal</h3>
+            <ul>
+              <li><a href="#">Política de Privacidade</a></li>
+              <li><a href="#">Portal de Privacidade</a></li>
+              <li><a href="#">Canal de Denúncias</a></li>
+              <li><a href="#">Termo de uso</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <div class="v1-footer__bottom">
+        <p>© <span id="v1-year">2026</span> V1 Prime. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+<script src="js/main.js"></script>
+<script src="https://js.hsforms.net/forms/embed/50353110.js" defer></script>
+</body>
+</html>
