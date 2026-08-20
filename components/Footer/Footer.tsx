@@ -70,8 +70,8 @@ export default function Footer() {
               V1 Prime
             </span>
             <p className={styles.tagline}>
-              Mobilidade premium por assinatura, com motoristas exclusivos e
-              atendimento garantido via WhatsApp.
+              Assinatura de mobilidade com motorista dedicado e atendimento
+              garantido via WhatsApp.
             </p>
             <p className={styles.seal}>Parte do Grupo Águia Branca e da VIXPar.</p>
             <div className={styles.socials}>

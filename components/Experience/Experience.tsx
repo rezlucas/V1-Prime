@@ -7,7 +7,7 @@ import { useReveal } from "../../hooks/useReveal";
 const ITEMS = [
   {
     image: "/images/experience/acolhimento.png",
-    title: "Um acolhimento único",
+    title: "Você é recebido com cuidado",
     description: "A porta é aberta para você. Sua bagagem é guardada. Tudo é cuidado.",
   },
   {
@@ -17,8 +17,8 @@ const ITEMS = [
   },
   {
     image: "/images/experience/imprevistos.jpeg",
-    title: "Zero imprevistos",
-    description: "Motoristas exclusivos, pontualidade e atenção em cada detalhe do trajeto.",
+    title: "Presença garantida",
+    description: "Motorista dedicado, pontualidade e atenção em cada detalhe do trajeto.",
   },
 ];
 
@@ -36,8 +36,8 @@ export default function Experience() {
           Respire.
         </h2>
         <p className={styles.subtitle}>
-          Uma experiência premium pensada para o seu dia a dia, com
-          motorista exclusivo e atendimento garantido.
+          A marca operando pela sua rotina, com motorista dedicado e
+          atendimento garantido.
         </p>
       </div>
 

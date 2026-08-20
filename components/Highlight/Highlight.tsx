@@ -7,7 +7,7 @@ export default function Highlight() {
   const [revealRef, visible] = useReveal<HTMLDivElement>();
 
   return (
-    <section className={styles.highlight} aria-label="Mobilidade premium é uma escolha">
+    <section className={styles.highlight} aria-label="Escolha uma marca que cuida da sua mobilidade">
       <div
         ref={revealRef}
         className={`container ${styles.inner} reveal-text ${visible ? "reveal-visible" : ""}`}
@@ -15,11 +15,11 @@ export default function Highlight() {
         <h2 className={styles.title}>
           Mobilidade é uma necessidade.
           <br />
-          Mobilidade premium é uma escolha.
+          Escolha uma marca que cuida disso para você.
         </h2>
         <p className={styles.subtitle}>
-          Experimente mobilidade planejada para quem valoriza tempo,
-          exclusividade e sofisticação.
+          V1 Prime é a assinatura de mobilidade para quem sabe o valor do
+          tempo e valoriza boas experiências.
         </p>
       </div>
     </section>

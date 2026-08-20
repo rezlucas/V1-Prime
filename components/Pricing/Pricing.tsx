@@ -44,7 +44,7 @@ const PLANS: Plan[] = [
     id: "essencial",
     name: "Essencial",
     popular: true,
-    description: "Para quem precisa de mobilidade premium no dia a dia, com previsibilidade e conforto.",
+    description: "Para quem precisa de mobilidade confiável no dia a dia, com previsibilidade e conforto.",
     prices: { mensal: 3670.8, trimestral: 3337.09, semestral: 3148.2, anual: 3242.65 },
     features: [
       { label: "Quantidade de horas:", value: "Utilize até 15h/mês" },
@@ -79,7 +79,7 @@ const PLANS: Plan[] = [
       { label: "Dependentes: 04" },
       { label: "Uso simultâneos: 3" },
       { label: "Frota dedicada" },
-      { label: "Central de agendamento" },
+      { label: "Central de atendimento" },
       { label: "Relatórios por colaborador" },
     ],
   },
@@ -103,12 +103,11 @@ export default function Pricing() {
         >
           <span className="eyebrow">Planos</span>
           <h2 className={styles.title}>
-            Viva a experiência de ter um motorista particular
+            Escolha a assinatura da sua rotina
           </h2>
           <p className={styles.subtitle}>
-            Escolha um plano que se adapta ao seu ritmo e tenha horas de
-            mobilidade premium com motorista exclusivo, conforto e zero
-            imprevistos.
+            Um plano que se adapta ao seu ritmo, com motorista dedicado,
+            conforto e presença garantida em cada trajeto.
           </p>
         </div>
 
@@ -152,7 +151,7 @@ export default function Pricing() {
               </p>
 
               <a href="#" className={styles.cta}>
-                Assinar agora
+                Contratar assinatura
               </a>
 
               <ul className={styles.features}>

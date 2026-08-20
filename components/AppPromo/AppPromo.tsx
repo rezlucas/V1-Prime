@@ -17,17 +17,17 @@ export default function AppPromo() {
           className={`${styles.copy} reveal-left ${copyVisible ? "reveal-visible" : ""}`}
         >
           <h2 className={styles.title}>
-            Agende em segundos
+            Direto
             <br />
             pelo WhatsApp.
           </h2>
           <p className={styles.text}>
-            Um canal exclusivo e rápido para todas as suas solicitações.
-            Converse com o V1 Prime e agende sua próxima viagem em poucos
-            toques, sem precisar baixar nenhum aplicativo.
+            Um canal direto e rápido para o que você precisar. Fale com o
+            V1 Prime e organize seu próximo trajeto em poucos toques, sem
+            precisar baixar nenhum aplicativo.
           </p>
 
-          <a href="#planos" className={styles.badge}>
+          <a href="#contato" className={styles.badge}>
             <IconWhatsapp className={styles.badgeIcon} />
             <span>
               <small>Fale agora</small>
@@ -62,7 +62,7 @@ export default function AppPromo() {
                 </div>
                 <div className={styles.bubbleIn}>Hoje, 18h. Rua Augusta, 100</div>
                 <div className={styles.bubbleOut}>
-                  Agendado ✅ Seu motorista chega às 18h em ponto.
+                  Confirmado ✅ Seu motorista chega às 18h em ponto.
                 </div>
               </div>
 

@@ -3,7 +3,8 @@ import Hero from "@/components/Hero/Hero";
 import Highlight from "@/components/Highlight/Highlight";
 import Services from "@/components/Services/Services";
 import Comparison from "@/components/Comparison/Comparison";
-import Pricing from "@/components/Pricing/Pricing";
+// Pricing is temporarily hidden (not deleted) — see note below.
+// import Pricing from "@/components/Pricing/Pricing";
 import AppPromo from "@/components/AppPromo/AppPromo";
 import Experience from "@/components/Experience/Experience";
 import Excellence from "@/components/Excellence/Excellence";
@@ -19,9 +20,10 @@ export default function Home() {
         <Highlight />
         <Services />
         <Comparison />
-        <Pricing />
-        <AppPromo />
         <Experience />
+        <AppPromo />
+        {/* <Pricing /> hidden on request — re-add here (and the id="planos"
+            anchor links pointing at it) to bring pricing back. */}
         <Excellence />
         <Contact />
       </main>

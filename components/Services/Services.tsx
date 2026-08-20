@@ -12,7 +12,7 @@ const SERVICES = [
     eyebrow: "Para empresários e executivos",
     title: "Sua agenda continua em movimento.",
     description:
-      "Reuniões em locais diferentes, viagens frequentes e zero tempo perdido no trânsito. O trajeto vira tempo produtivo, sem depender de imprevistos.",
+      "Reuniões em locais diferentes e viagens frequentes. Um motorista dedicado conduz sua rotina, com presença garantida em cada trajeto.",
   },
   {
     image: "/images/services/familias.webp",
@@ -24,9 +24,9 @@ const SERVICES = [
   {
     image: "/images/services/ocasioes.webp",
     eyebrow: "Para turismo e viagens",
-    title: "Uma experiência superior começa antes do destino.",
+    title: "Presença que começa antes do destino.",
     description:
-      "Assistência com bagagens, pontualidade e um atendimento compatível com cada compromisso, do aeroporto ao hotel.",
+      "Assistência com bagagens, pontualidade e acompanhamento em cada compromisso, do aeroporto ao hotel.",
   },
   {
     image: "/images/services/rotina.png",
@@ -74,7 +74,7 @@ export default function Services() {
                 <span className={styles.cardEyebrow}>{eyebrow}</span>
                 <h3 className={styles.cardTitle}>{title}</h3>
                 <p className={styles.cardText}>{description}</p>
-                <a href="#planos" className={styles.cardLink}>
+                <a href="#contato" className={styles.cardLink}>
                   Saiba mais
                 </a>
               </div>

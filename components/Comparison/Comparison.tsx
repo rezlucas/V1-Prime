@@ -8,15 +8,15 @@ import { useReveal } from "../../hooks/useReveal";
 
 const PRIME_POINTS = [
   "Tarifa fixa por assinatura, sem surpresas",
-  "Motorista exclusivo e dedicado",
+  "Motorista dedicado à sua rotina",
   "Frota própria, híbrida e padronizada",
   "Atendimento direto via WhatsApp",
-  "Disponibilidade garantida, zero cancelamento",
+  "Presença garantida, zero cancelamento",
 ];
 
 const OTHERS_POINTS = [
   "Preço dinâmico, muda a qualquer hora",
-  "Motorista diferente a cada corrida",
+  "Motorista diferente a cada trajeto",
   "Carros terceirizados, sem padrão",
   "Atendimento só dentro do app",
   "Risco de cancelamento a qualquer momento",
@@ -30,14 +30,14 @@ export default function Comparison() {
   const [othersListRef, othersListVisible] = useReveal<HTMLUListElement>();
 
   return (
-    <section className={styles.comparison} id="comparativo" aria-label="Por que o Prime está em outro nível">
+    <section className={styles.comparison} id="comparativo" aria-label="Por que é uma nova experiência em mobilidade">
       <div className="container">
         <div
           ref={headerRef}
           className={`${styles.header} reveal-text ${headerVisible ? "reveal-visible" : ""}`}
         >
           <span className={`eyebrow ${styles.eyebrow}`}>Comparativo</span>
-          <h2 className={styles.title}>Por que o Prime está em outro nível?</h2>
+          <h2 className={styles.title}>Por que é uma nova experiência em mobilidade?</h2>
         </div>
 
         <div className={styles.grid}>
@@ -89,8 +89,8 @@ export default function Comparison() {
         </div>
 
         <div className={styles.footer}>
-          <a href="#planos" className={styles.cta}>
-            Quero ser Prime
+          <a href="#contato" className={styles.cta}>
+            Conheça a assinatura
           </a>
         </div>
       </div>

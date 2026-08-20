@@ -18,11 +18,12 @@ export default function Hero() {
       </div>
 
       <div className={`container ${styles.inner}`}>
-        <h1 className={styles.title}>
-          A tranquilidade de saber que seu
-          <br />
-          motorista já está a caminho.
-        </h1>
+        <h1 className={styles.title}>Sua rotina, conduzida.</h1>
+        <p className={styles.subtitle}>
+          V1 Prime é a assinatura de mobilidade que opera pela sua rotina:
+          motorista dedicado, atendimento pelo WhatsApp e presença garantida
+          em cada trajeto.
+        </p>
       </div>
     </section>
   );

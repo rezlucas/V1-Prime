@@ -10,7 +10,6 @@ const NAV_LINKS = [
   { label: "Nossos serviços", href: "#servicos" },
   { label: "Vantagens", href: "#vantagens" },
   { label: "Comparativo", href: "#comparativo" },
-  { label: "Planos", href: "#planos" },
   { label: "Contato", href: "#contato" },
 ];
 

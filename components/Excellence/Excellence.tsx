@@ -19,7 +19,7 @@ const PERKS = [
   {
     icon: IconWhatsapp,
     title: "Atendimento via WhatsApp",
-    description: "Um canal exclusivo e rápido para todas as suas solicitações.",
+    description: "Um canal direto e rápido para o que você precisar.",
   },
   {
     icon: IconLeaf,
@@ -28,8 +28,8 @@ const PERKS = [
   },
   {
     icon: IconStar,
-    title: "Motoristas exclusivos",
-    description: "Profissionais treinados em atendimento premium, sempre à sua disposição.",
+    title: "Motoristas dedicados",
+    description: "Profissionais treinados para cuidar de cada detalhe, sempre à sua disposição.",
   },
   {
     icon: IconPin,
@@ -55,7 +55,7 @@ export default function Excellence() {
     <section
       className={styles.excellence}
       id="vantagens"
-      aria-label="Exclusividades que acompanham cada trajeto"
+      aria-label="A carteira de privilégios da sua assinatura"
     >
       <div className={styles.sheen} aria-hidden="true" />
       <div className="container">
@@ -64,7 +64,11 @@ export default function Excellence() {
           className={`${styles.header} reveal-text ${headerVisible ? "reveal-visible" : ""}`}
         >
           <span className="eyebrow">Vantagens</span>
-          <h2 className={styles.title}>Exclusividades que acompanham cada trajeto</h2>
+          <h2 className={styles.title}>
+            A carteira de privilégios
+            <br />
+            da sua assinatura
+          </h2>
         </div>
 
         <ul
@@ -105,8 +109,8 @@ export default function Excellence() {
         </div>
 
         <div className={styles.footer}>
-          <a href="#planos" className={styles.cta}>
-            Quero experiência Prime
+          <a href="#contato" className={styles.cta}>
+            Fale com a V1 Prime
           </a>
         </div>
       </div>
