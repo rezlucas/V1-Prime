@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import styles from "./Comparison.module.css";
 import Logo from "../Logo";
 import { IconCheck, IconX } from "../icons";
@@ -66,13 +65,7 @@ export default function Comparison() {
             className={`${styles.card} ${styles.cardOthers} reveal-right ${othersCardVisible ? "reveal-visible" : ""}`}
           >
             <div className={styles.cardHead}>
-              <Image
-                src="/images/outros-app-logo.webp"
-                alt="Outros apps"
-                width={140}
-                height={57}
-                className={styles.othersLogo}
-              />
+              <span className={styles.othersLabel}>Aplicativos de mercado</span>
             </div>
             <ul
               ref={othersListRef}

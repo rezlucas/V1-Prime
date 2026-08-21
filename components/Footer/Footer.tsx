@@ -15,7 +15,7 @@ const COLUMNS = [
     ],
   },
   {
-    title: "V1 Prime para empresas",
+    title: "Para empresas",
     links: ["Visão geral", "Corporações", "Agências de viagem", "Parcerias estratégicas"],
   },
   {
@@ -67,7 +67,7 @@ export default function Footer() {
           <div className={styles.brand}>
             <span className={styles.logo}>
               <Logo className={styles.logoMark} />
-              V1 Prime
+              Prime
             </span>
             <p className={styles.tagline}>
               Assinatura de mobilidade com motorista dedicado e atendimento

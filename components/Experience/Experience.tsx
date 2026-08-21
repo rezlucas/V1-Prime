@@ -14,6 +14,7 @@ const ITEMS = [
     image: "/images/experience/tom.webp",
     title: "Você dá o tom",
     description: "Relaxe. Música e temperatura ajustadas às suas preferências, sempre.",
+    imagePosition: "68% 35%",
   },
   {
     image: "/images/experience/imprevistos.jpeg",
@@ -42,7 +43,7 @@ export default function Experience() {
       </div>
 
       <div className={styles.stack}>
-        {ITEMS.map(({ image, title, description }, i) => (
+        {ITEMS.map(({ image, title, description, imagePosition }, i) => (
           <div
             key={title}
             className={styles.stackItem}
@@ -55,6 +56,7 @@ export default function Experience() {
                 fill
                 sizes="100vw"
                 className={styles.cardImage}
+                style={imagePosition ? { objectPosition: imagePosition } : undefined}
               />
               <div className={styles.scrim} />
               <div className={styles.overlay}>

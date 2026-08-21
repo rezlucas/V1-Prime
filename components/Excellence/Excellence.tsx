@@ -110,7 +110,7 @@ export default function Excellence() {
 
         <div className={styles.footer}>
           <a href="#contato" className={styles.cta}>
-            Fale com a V1 Prime
+            Fale com o V1 Prime
           </a>
         </div>
       </div>
